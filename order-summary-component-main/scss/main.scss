@@ -1,0 +1,117 @@
+@import "config";
+@import "mixins";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("../images/pattern-background-mobile.svg") no-repeat center
+    center/cover;
+  color: $text-color;
+  @include flexCenter;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+// CARD
+section {
+  max-width: 350px;
+  width: 95%;
+  height: 100%;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+  padding-bottom: 10px;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.container {
+  @include flexCenter;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1.215em 1.5em;
+
+  #{&}__title {
+    font-size: 1.2rem;
+  }
+
+  #{&}__content {
+    font-size: 0.8rem;
+    width: 30ch;
+    text-align: center;
+    margin-top: 1em;
+    line-height: 1.7;
+  }
+}
+
+.annual-plan {
+  width: 90%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 50px max-content 1fr;
+  gap: 10px;
+  margin: 1.715em auto;
+
+  h3,
+  p {
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  p {
+    font-weight: 700;
+  }
+
+  a {
+    color: $primary-color;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    transition: opacity 100ms ease-in-out;
+
+    &:hover {
+      color: lighten($primary-color, 10%);
+    }
+  }
+}
+
+// BUTTON
+.btn {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.8em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: $text-color;
+  transition: all 100ms ease-in-out;
+
+  &:hover:not(.btn-primary) {
+    color: darken($text-color, 80%);
+  }
+}
+
+.btn-primary {
+  background: $primary-color;
+  border-radius: 0.5em;
+  color: lighten($primary-color, 100%);
+
+  &:hover {
+    background: lighten($primary-color, 5%);
+  }
+}
+
+// ATTRIBUTION
+.attribution {
+  width: 100%;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

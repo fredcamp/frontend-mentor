@@ -1,0 +1,22 @@
+$primary-color: #382ae1;
+$text-color: #777;
+$title-color: #2a2a2a;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: $title-color;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+}
