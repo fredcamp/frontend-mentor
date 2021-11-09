@@ -1,0 +1,108 @@
+@import "config";
+@import "mixins";
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: $text-color;
+  color: $text-color;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+h1,
+p {
+  color: $text-color;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  @include desktopView(850px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  & > *:first-child {
+    background-color: $bg-color1;
+    color: $bg-color1;
+  }
+
+  & > *:nth-child(2) {
+    background-color: $bg-color2;
+    color: $bg-color2;
+  }
+
+  & > *:nth-child(3) {
+    background-color: $bg-color3;
+    color: $bg-color3;
+  }
+}
+
+.grid-item {
+  padding: 2.5em;
+  min-width: 270px;
+
+  &__svg {
+    width: 60px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    font-size: 2.215rem;
+  }
+
+  &__content {
+    color: darken($text-color, 15%);
+    font-size: 0.9rem;
+    width: 23ch;
+    margin: 1.5em 0;
+    line-height: 1.7;
+    @include desktopView(850px) {
+      margin: 1.5em 0 4em;
+    }
+  }
+
+  &__btn {
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    background-color: $text-color;
+    color: currentColor;
+    padding: 0.8em 1.9em;
+    border-radius: 2.5em;
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      outline: 1px solid $text-color;
+      background: transparent;
+      color: $text-color;
+    }
+  }
+}
+
+.attribution {
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

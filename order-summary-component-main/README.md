@@ -8,11 +8,11 @@ Users should be able to:
 
 - See hover states for interactive elements
 
-### Screenshot
+## Screenshot
 
 ![Challenge Output Screenshot](./images/result1.PNG)
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - SASS

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Lexend+Deca:wght@200;300;400;500;600&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: #fff;
+  color: #fff;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+h1,
+p {
+  color: #fff;
+}
+
+section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 850px) {
+  .grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid > *:first-child {
+  background-color: #e28525;
+  color: #e28525;
+}
+
+.grid > *:nth-child(2) {
+  background-color: #016972;
+  color: #016972;
+}
+
+.grid > *:nth-child(3) {
+  background-color: #00403f;
+  color: #00403f;
+}
+
+.grid-item {
+  padding: 2.5em;
+  min-width: 270px;
+}
+
+.grid-item__svg {
+  width: 60px;
+}
+
+.grid-item__title {
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  font-size: 2.215rem;
+}
+
+.grid-item__content {
+  color: #d9d9d9;
+  font-size: 0.9rem;
+  width: 23ch;
+  margin: 1.5em 0;
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 850px) {
+  .grid-item__content {
+    margin: 1.5em 0 4em;
+  }
+}
+
+.grid-item__btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  color: currentColor;
+  padding: 0.8em 1.9em;
+  border-radius: 2.5em;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.grid-item__btn:hover {
+  outline: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.attribution {
+  font-family: Arial, sans-serif;
+  color: #000;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
