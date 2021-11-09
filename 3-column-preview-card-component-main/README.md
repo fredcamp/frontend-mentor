@@ -12,9 +12,13 @@ Users should be able to:
 ## Screenshot
 
 - Mobile and Desktop Responsiveness
-  ![Responsiveness GIF](./images/result_responsive.gif)
+
+  ## ![Responsiveness GIF](./images/result_responsive.gif)
+
+---
 
 - Hover States
+
   ![Button Hovers GIF](./images/result_hovers.gif)
 
 ## Built with
