@@ -27,35 +27,30 @@ Users should be able to:
 
 ### What I learned
 
-Use each individual grid's background to your advantage by using its `background-color`, and set it to their button's CSS e.g. `color: transparent`.
+Use each individual grid's background to your advantage by using its `background-color`, and set it to their button's CSS hover effects: `background: transparent`.
 
 ```scss
 .grid {
   & > *:first-child {
-    background-color: $bg-color1;
-    color: $bg-color1;
+    background-color: $bg-color1; //$bg-color: rgb(226, 133, 37);
   }
 
   & > *:nth-child(2) {
-    background-color: $bg-color2;
-    color: $bg-color2;
+    background-color: $bg-color2; //$bg-color: rgb(1, 105, 114);
   }
 
   & > *:nth-child(3) {
-    background-color: $bg-color3;
-    color: $bg-color3;
+    background-color: $bg-color3; //$bg-color: rgb(0, 64, 63);
   }
 }
 ```
 
 ```scss
 &__btn {
-  background-color: $text-color;
-  color: currentColor;
+  color: currentColor; // $bg-color
 
   &:hover {
-    background: transparent;
-    color: $text-color;
+    background: transparent; // $bg-color
   }
 }
 ```
