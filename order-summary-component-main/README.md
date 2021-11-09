@@ -10,7 +10,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Challenge Output Screenshot](./images/result1.png)
+![Challenge Output Screenshot](./images/result1.PNG)
 
 ### Built with
 
