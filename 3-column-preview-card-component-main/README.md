@@ -29,7 +29,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
+## What I learned
 
 Use each individual grid's background to your advantage by using its `background-color`, and set it to their button's CSS hover effects: `background: transparent`.
 
