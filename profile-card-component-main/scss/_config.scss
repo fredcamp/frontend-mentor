@@ -1,0 +1,11 @@
+$primary-color: rgb(25, 161, 173);
+$title-color: #333;
+$text-color: #777;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
