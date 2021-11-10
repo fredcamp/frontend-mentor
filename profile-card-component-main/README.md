@@ -22,7 +22,7 @@ Mobile and Web Responsiveness
 
 ## What I learned
 
-Use `transform: translate()` when aligning the backgroud patterns when using absolute positioning, so that images inside the body won't get messed up.
+Use `transform: translate()` to align the background patterns when using absolute positioning, so that other contents inside the body won't get affected.
 
 ```scss
 @mixin mediaQuery($width) {
