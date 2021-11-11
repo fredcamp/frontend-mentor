@@ -10,8 +10,9 @@ Users should be able to:
 
 ## Screenshot
 
-Responsive Web Design
-![Mobile and Web Responsiveness](images/result_responsive.gif)
+- Responsive Web Design
+
+  ![Mobile and Web Responsiveness](images/result_responsive.gif)
 
 ## Built with
 
@@ -23,7 +24,7 @@ Responsive Web Design
 
 ## What I learned
 
-You can't add an `::after` pseudo element selector to an image inside an `<img>` tag. You can use an alternative way by using another tags like `<div>` or `<span>` and declare the `background attributes and styles` in the CSS.
+You can't add an `::after` pseudo element selector to an image inside an `<img>` tag. You can use a work-around by using another tags like `<div>` or `<span>` and declare the `background attributes and styles` in the CSS.
 
 ```html
 <main>
