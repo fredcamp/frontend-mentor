@@ -24,25 +24,45 @@ Users should be able to:
 
 ## What I learned
 
-You can't add an `::after` pseudo element selector to an image inside an `<img>` tag. You can use a work-around by using another tags like `<div>` or `<span>` and declare the `background attributes and styles` in the CSS.
+- You can't add an `::after` pseudo element selector to an image inside an `<img>` tag. You can use a work-around by using another tags like `<div>` or `<span>` and declare the `background attributes and styles` in the CSS.
 
-```html
-<main>
-  <section class="card">
-    <div class="card__img"></div>
-  </section>
-</main>
-```
+  ```html
+  <main>
+    <section class="card">
+      <div class="card__img"></div>
+    </section>
+  </main>
+  ```
 
-```scss
-.card {
-  &__img {
-    background: $primary-color url(../images/image-header-mobile.jpg) no-repeat
-      center center/cover;
-    background-blend-mode: overlay;
+  ```scss
+  .card {
+    &__img {
+      background: $primary-color url(../images/image-header-mobile.jpg)
+        no-repeat center center/cover;
+      background-blend-mode: overlay;
+    }
   }
-}
-```
+  ```
+
+- Since the card image was declared first in the `HTML`, it becomes a problem when the window has changed into desktop view. To resolve this, you can change the `display: flex` into `display: grid` and reverse the order by using `Grid Areas`:
+
+  ```scss
+  .card {
+    @include mediaQuery(800px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "A B";
+
+      &__img {
+        grid-area: B;
+      }
+
+      .card-content {
+        grid-area: A;
+      }
+    }
+  }
+  ```
 
 ## Author
 

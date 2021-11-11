@@ -87,6 +87,11 @@ main {
     -ms-grid-column: 2;
     grid-area: B;
   }
+  .card .card-content {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: A;
+  }
 }
 
 .card-content {
