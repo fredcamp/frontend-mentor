@@ -8,9 +8,9 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Screenshot
 
-Mobile and Web Responsiveness
+Responsive Web Design
 
-![Mobile and Web Responsiveness GIF](images/result_responsive.gif)
+![Mobile and Desktop Responsiveness GIF](images/result_responsive.gif)
 
 ## Built with
 
