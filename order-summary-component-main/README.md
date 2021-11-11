@@ -10,7 +10,7 @@ Users should be able to:
 
 ## Screenshot
 
-![Challenge Output Screenshot](./images/result1.PNG)
+![Hover States GIF](images/result_responsive.gif)
 
 ## Built with
 
