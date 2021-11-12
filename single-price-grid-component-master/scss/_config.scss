@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap");
+
+$bg-color: rgb(230, 239, 246);
+$primary-color: rgb(45, 171, 180);
+$primary-color-accent: rgb(74, 190, 189);
+$secondary-color: rgb(191, 223, 50);
+$text-color: #fff;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

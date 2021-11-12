@@ -1,0 +1,133 @@
+@import "config";
+@import "mixins";
+
+body {
+  font-family: Karla, sans-serif;
+  background-color: $bg-color;
+  line-height: 1.5;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+main {
+  @include flexCenter(column);
+  margin: auto;
+  padding: 2em;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 650px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $text-color;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &__content {
+    padding: 2em;
+  }
+
+  @include mediaQuery(600px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__content:first-of-type {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.community {
+  background-color: $text-color;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  h3 {
+    margin-top: 1em;
+    color: $secondary-color;
+  }
+
+  p {
+    margin-top: 1em;
+    color: darken($text-color, 50%);
+    max-width: 60ch;
+  }
+}
+
+.subscription {
+  background-color: $primary-color;
+  color: $text-color;
+
+  .price {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0.25em;
+
+    span {
+      font-size: 1rem;
+      font-weight: normal;
+      color: darken($text-color, 20%);
+    }
+  }
+
+  .access {
+    margin: 0.5em 0 1em;
+  }
+
+  .btn {
+    display: block;
+    background-color: $secondary-color;
+    text-align: center;
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 700;
+    padding: 0.715em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 150ms ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.why-us {
+  background-color: $primary-color-accent;
+  color: $text-color;
+
+  p {
+    margin-top: 1em;
+    color: darken($text-color, 10%);
+  }
+
+  @include mediaQuery(600px) {
+    p {
+      max-width: 25ch;
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+    margin-left: 3px;
+  }
+}

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Karla, sans-serif;
+  background-color: #e6eff6;
+  line-height: 1.5;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  padding: 2em;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 650px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-radius: 1em;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card__content {
+  padding: 2em;
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .card__content:first-of-type {
+    grid-column: 1 / -1;
+  }
+}
+
+.community {
+  background-color: #fff;
+}
+
+.community h1 {
+  color: #2dabb4;
+}
+
+.community h3 {
+  margin-top: 1em;
+  color: #bfdf32;
+}
+
+.community p {
+  margin-top: 1em;
+  color: gray;
+  max-width: 60ch;
+}
+
+.subscription {
+  background-color: #2dabb4;
+  color: #fff;
+}
+
+.subscription .price {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0.25em;
+}
+
+.subscription .price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #cccccc;
+}
+
+.subscription .access {
+  margin: 0.5em 0 1em;
+}
+
+.subscription .btn {
+  display: block;
+  background-color: #bfdf32;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.715em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: opacity 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
+}
+
+.subscription .btn:hover {
+  opacity: 0.8;
+}
+
+.why-us {
+  background-color: #4abebd;
+  color: #fff;
+}
+
+.why-us p {
+  margin-top: 1em;
+  color: #e6e6e6;
+}
+
+@media screen and (min-width: 600px) {
+  .why-us p {
+    max-width: 25ch;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+  margin-left: 3px;
+}
+/*# sourceMappingURL=main.css.map */
