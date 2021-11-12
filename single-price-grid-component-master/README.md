@@ -23,7 +23,7 @@ Users should be able to:
 
 ### What I learned
 
-When working in a mobile-first approach, change the `display` of the card from `flex` to `grid` and change the column-end of the first child/content to **`-1`** to span it across the end of the column.
+When working in a mobile-first approach, change the `display` of the card from `display: flex` to `display: grid` and change the `grid-column-end` of the first child/content to `-1` to span it across the end of the column.
 
 ```html
 <section class="card">
