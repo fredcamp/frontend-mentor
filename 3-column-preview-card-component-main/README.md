@@ -11,9 +11,7 @@ Users should be able to:
 
 ## Screenshot
 
-- Mobile and Desktop Responsiveness
-
-  ## ![Responsiveness GIF](./images/result_responsive.gif)
+![Mobile and Desktop Responsiveness](./images/result_responsive.gif)
 
 ---
 
