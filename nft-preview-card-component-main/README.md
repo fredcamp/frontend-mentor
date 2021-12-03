@@ -23,7 +23,7 @@ Users should be able to:
 
 ## What I learned
 
-- You can't add a pseudo-element selector on an `<img>` tag for the hover state. You can use a work-around by inserting it inside a `<div>` or targeting its parent element to do the CSS styling. It's best to wrap the image description inside a div (especially if it consists alot of texts and buttons). But for this one, I didn't use it since there's only a single icon that needs to be displayed.
+- You can't add a pseudo-element selector on an `<img>` tag for the hover state. You can use a work-around by wrapping it inside a `<div>` or targeting its parent element to do the CSS styling. It's best to wrap the image description inside a div (especially if it consists alot of texts and buttons). But for this one, I didn't use it since there's only a single icon that needs to be displayed.
 
 ```scss
 .card-header {
