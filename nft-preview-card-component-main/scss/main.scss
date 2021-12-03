@@ -66,8 +66,8 @@ main {
     height: 100%;
     width: 100%;
     background-color: $accent-color;
-    transition: opacity 200ms ease-in-out;
     opacity: 0;
+    transition: opacity 200ms ease-in-out;
   }
 
   &:hover &__svg {
