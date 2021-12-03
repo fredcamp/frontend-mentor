@@ -53,8 +53,8 @@ Users should be able to:
   }
 
   &::after {
-    transition: opacity 200ms ease-in-out;
     opacity: 0;
+    transition: opacity 200ms ease-in-out;
   }
 
   &:hover &__svg {
