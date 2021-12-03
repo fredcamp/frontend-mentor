@@ -11,7 +11,7 @@ Users should be able to:
 
 ## Screenshot
 
-![Hover States](/images/result.gif)
+![Hover States](images/result.gif)
 
 ## Built with
 
