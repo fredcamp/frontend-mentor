@@ -131,7 +131,7 @@ main {
           align-items: center;
 }
 
-.card-stats svg + p {
+.card-stats img + p {
   margin-left: 0.5em;
 }
 
