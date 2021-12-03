@@ -1,0 +1,150 @@
+@import "config";
+@import "function";
+
+body {
+  font-family: Outfit, sans-serif;
+  font-weight: weight(regular);
+  background-color: $bg-color-main;
+  color: $primary-color;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.card {
+  max-width: 350px;
+  background-color: $bg-color-card;
+  padding: 1.5em;
+  border-radius: 1em;
+
+  & > h1 {
+    cursor: pointer;
+    color: $text-color;
+    font-weight: weight(bold);
+    margin-top: 1em;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  & > p {
+    margin-top: 1em;
+    max-width: 30ch;
+  }
+}
+
+.card-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__svg {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $accent-color;
+    transition: opacity 200ms ease-in-out;
+    opacity: 0;
+  }
+
+  &:hover &__svg {
+    opacity: 1;
+  }
+
+  &:hover::after {
+    opacity: 0.4;
+  }
+}
+
+.card-stats {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+
+  &__value,
+  &__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg + p {
+    margin-left: 0.5em;
+  }
+
+  &__value p {
+    color: $accent-color;
+    font-weight: weight(medium);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: $line-color;
+  }
+}
+
+.creator {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+
+  img {
+    max-height: 35px;
+    background-color: $text-color;
+    border-radius: 50%;
+    padding: 2px;
+  }
+
+  p {
+    margin-left: 1em;
+  }
+
+  span {
+    cursor: pointer;
+    color: $text-color;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
