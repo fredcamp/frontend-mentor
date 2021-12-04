@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
+$text-color-primary: hsl(238, 29%, 16%);
+$text-color-primary-accent: hsl(14, 88%, 65%);
+
+$bg-color-violet: hsl(273, 75%, 66%);
+$bg-color-blue: hsl(240, 73%, 65%);
+
+$text-color-neutral: hsl(237, 12%, 33%);
+$text-color-neutral-accent: hsl(240, 6%, 50%);
+
+$divider-color: hsl(240, 5%, 91%);
+
+$font-weight: (
+  "regular": 400,
+  "bold": 700,
+);
+
 *,
 *::before,
 *::after {
@@ -10,4 +26,8 @@
 
 img {
   max-width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
 }

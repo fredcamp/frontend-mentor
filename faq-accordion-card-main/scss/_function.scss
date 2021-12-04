@@ -1,0 +1,13 @@
+@function weight($weight) {
+  @return map-get($font-weight, $weight);
+}
+
+@mixin animate($type, $time) {
+  transition: $type $time ease-in-out;
+}
+
+@mixin mediaQuery($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}

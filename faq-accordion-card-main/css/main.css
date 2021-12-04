@@ -12,7 +12,224 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 body {
   font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4a4b5e;
+  line-height: 1.5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 0.75rem;
+  }
+}
+
+main {
+  min-height: 95vh;
+  padding: 10em 3em 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    padding: 0 5em;
+  }
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 2em;
+}
+
+.card__title {
+  margin-top: 120px;
+  text-align: center;
+  font-weight: 700;
+  color: #1d1e35;
+}
+
+@media screen and (min-width: 680px) {
+  .card__title {
+    margin-top: 180px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    max-width: 800px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .card__title {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.card-header {
+  position: relative;
+}
+
+.card-header__top-desktop, .card-header__side-desktop, .card-header__bg {
+  display: none;
+}
+
+.card-header__top, .card-header__bottom {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.card-header__top {
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+}
+
+.card-header__bottom {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (min-width: 650px) {
+  .card-header__bottom {
+    -webkit-transform: translate(-50%, 20%);
+            transform: translate(-50%, 20%);
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card-header {
+    overflow: hidden;
+  }
+  .card-header .card-header {
+    overflow-x: hidden;
+  }
+  .card-header__top-desktop, .card-header__side-desktop, .card-header__bg {
+    display: unset;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  .card-header__bg {
+    -webkit-transform: translate(-20%, -40%);
+            transform: translate(-20%, -40%);
+  }
+  .card-header__top-desktop {
+    -webkit-transform: translate(-20%, -50%);
+            transform: translate(-20%, -50%);
+  }
+  .card-header__side-desktop {
+    z-index: 2;
+    -webkit-transform: translate(-50%, -23%);
+            transform: translate(-50%, -23%);
+  }
+  .card-header__top, .card-header__bottom {
+    display: none;
+  }
+}
+
+.card-questions {
+  position: relative;
+  width: 100%;
+  color: #787887;
+  padding: 1em 2em;
+}
+
+@media screen and (min-width: 900px) {
+  .card-questions {
+    padding: 3em;
+  }
+}
+
+.card-question {
+  border-bottom: 2px solid #e7e7e9;
+  overflow: hidden;
+}
+
+.card-question__summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em 0;
+  cursor: pointer;
+}
+
+.card-question__summary:hover {
+  color: #f47c57;
+}
+
+.card-question__summary img {
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.card-question__answer {
+  visibility: hidden;
+  height: 0;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ label > img {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+input[type="checkbox"]:checked ~ label > p {
+  color: #1d1e35;
+  font-weight: 700;
+}
+
+input[type="checkbox"]:checked ~ p {
+  visibility: visible;
+  height: auto;
+  padding-bottom: 1em;
+}
+
+.attribution {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  color: #333;
+}
+
+.attribution a {
+  color: #111;
 }
 /*# sourceMappingURL=main.css.map */
