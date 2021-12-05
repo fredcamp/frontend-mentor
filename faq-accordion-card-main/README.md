@@ -55,8 +55,6 @@ input[type="checkbox"]:checked ~ p {
   visibility: visible;
   height: auto;
 }
-
-}
 ```
 
 ## Author
