@@ -14,17 +14,20 @@ Users should be able to:
 ## Screenshot
 
 - Desktop and Mobile Responsiveness
+
   ![desktop and mobile web responsiveness GIF](images/result_responsive.gif)
 
 ---
 
 - Mobile Hover States
+
   ![mobile web hover states GIF](images/result_mobile-hover.gif)
 
 ---
 
--Desktop Hover States
-![desktop web hover states GIF](images/result_hover.gif)
+- Desktop Hover States
+
+  ![desktop web hover states GIF](images/result_hover.gif)
 
 ### Built with
 
