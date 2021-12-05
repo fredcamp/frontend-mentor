@@ -223,13 +223,12 @@ input[type="checkbox"]:checked ~ p {
 .attribution {
   position: relative;
   text-align: center;
-  bottom: 0;
   font-size: 11px;
   text-align: center;
-  color: #333;
+  color: #a7a7a7;
 }
 
 .attribution a {
-  color: #111;
+  color: #1e0063;
 }
 /*# sourceMappingURL=main.css.map */
