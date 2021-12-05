@@ -19,15 +19,15 @@ Users should be able to:
 
 ---
 
-- Mobile Hover States
-
-  ![mobile web hover states GIF](images/result_mobile-hover.gif)
-
----
-
 - Desktop Hover States
 
   ![desktop web hover states GIF](images/result_hover.gif)
+
+---
+
+- Mobile Hover States
+
+  ![mobile web hover states GIF](images/result_mobile-hover.gif)
 
 ### Built with
 
