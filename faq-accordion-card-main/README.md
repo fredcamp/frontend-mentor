@@ -39,7 +39,7 @@ Users should be able to:
 
 ## What I learned
 
-- You can use **checkbox + label** hack instead of using **_Javascript_** to change the direction of arrows and display the answers of FAQs by taking it out from its relative flow using `position: absolute` and using negative margin or `opacity: 0`.
+- You can use the **checkbox + label** hack instead of using **Javascript** to change the direction of arrows and hide/display the answers by taking it out from its relative flow using `position: absolute` and using negative margin or `opacity: 0`.
 
 ```html
 <div class="card-question">
