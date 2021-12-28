@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800&display=swap");
 *,
 *::before,
 *::after {
@@ -8,10 +9,11 @@
 }
 
 body {
-  font-family: Tahoma, sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   background: #19a1ad;
   color: #777;
   position: relative;
+  font-weight: 400;
 }
 
 main {
@@ -163,7 +165,7 @@ main {
   padding: 1em 1.5em 1.5em;
   width: 100%;
   text-align: center;
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 1px solid #dddddd;
 }
 
 .card-info .name {
@@ -174,13 +176,14 @@ main {
 
 .card-info .age {
   color: #777;
-  font-weight: 400;
+  font-weight: 500;
   margin-left: 0.5em;
 }
 
 .card-info .location {
   margin-top: 0.5em;
   font-size: 0.95rem;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
@@ -196,12 +199,16 @@ main {
 
 .card-numbers b {
   color: #333;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.12rem;
 }
 
 .card-numbers p {
   padding-top: 0.35em;
   font-size: 0.715rem;
   letter-spacing: 1.5px;
+  font-weight: 500;
 }
 
 .attribution {
