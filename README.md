@@ -10,3 +10,4 @@ Compilation of output from [Frontend Mentor Challenges](https://www.frontendment
 - [Single Price Grid](/single-price-grid-component-master)
 - [NFT Preview Card](/nft-preview-card-component-main)
 - [FAQ Accordion Card](/faq-accordion-card-main)
+- [Products Preview Card](/product-preview-card-component-main)
