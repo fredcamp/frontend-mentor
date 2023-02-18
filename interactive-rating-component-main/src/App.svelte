@@ -2,7 +2,7 @@
   import icon from "./images/favicon-32x32.png";
   import star from "./images/icon-star.svg";
   import submitImg from "./images/illustration-thank-you.svg";
-  import RadioButton from "./RadioButton.svelte";
+  import Rating from "./Rating.svelte";
   let selected: number;
   let show = false;
 
@@ -51,7 +51,7 @@
         <ul class="!mt-7 flex justify-between">
           {#each new Array(5) as item, i}
             <li>
-              <RadioButton bind:selected num={i + 1} />
+              <Rating bind:selected num={i + 1} />
             </li>
           {/each}
         </ul>
