@@ -11,3 +11,4 @@ Compilation of output from [Frontend Mentor Challenges](https://www.frontendment
 - [NFT Preview Card](/nft-preview-card-component-main)
 - [FAQ Accordion Card](/faq-accordion-card-main)
 - [Products Preview Card](/product-preview-card-component-main)
+- [Interactive Rating](/interactive-rating-component-main)
