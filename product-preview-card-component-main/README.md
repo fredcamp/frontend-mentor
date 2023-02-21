@@ -22,9 +22,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile View](./src/images/output-mobile.jpg)
+![Mobile View](./design/output-mobile.jpg)
 
-![Desktop View](./src/images/output-desktop.jpg)
+![Desktop View](./design//output-desktop.jpg)
 
 ## My process
 

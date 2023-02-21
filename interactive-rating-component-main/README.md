@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![View](./src/images/output.jpg)
+![View](./design/output.jpg)
 
 ## My process
 
