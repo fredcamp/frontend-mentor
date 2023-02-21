@@ -24,9 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![View](./design/output.jpg)
-
-![In Action](./design//output.gif)
+![View](./design//output.gif)
 
 ## My process
 
