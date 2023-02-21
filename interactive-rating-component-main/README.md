@@ -26,6 +26,8 @@ Users should be able to:
 
 ![View](./design/output.jpg)
 
+![In Action](./design//output.gif)
+
 ## My process
 
 ### Built with
