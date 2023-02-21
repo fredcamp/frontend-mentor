@@ -36,14 +36,14 @@
     >
       <CardBack
         bind:expCvc
-        class="absolute right-4 -translate-y-2 lg:top-[23rem] lg:right-0 lg:translate-x-32"
+        class="absolute right-4 -translate-y-2 lg:right-0 lg:top-1/2 lg:-translate-y-1/2"
       />
       <CardFront
         bind:cardName
         bind:cardNumber
         bind:expMonth
         bind:expYear
-        class="absolute left-4 translate-y-24 lg:left-auto lg:right-0 lg:top-14 lg:translate-x-20"
+        class="absolute left-4 translate-y-24 lg:right-0 lg:left-auto lg:top-1/2 lg:-translate-y-1/2"
       />
     </div>
   </header>
