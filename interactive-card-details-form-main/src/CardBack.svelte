@@ -11,10 +11,12 @@
   }
 </script>
 
-<div class={className} {...$$restProps}>
-  <img src={cardBack} alt="card back" class="max-h-44 shrink-0" />
-  <span
-    class="absolute top-1/2 right-9 -translate-y-[60%] text-sm tracking-widest text-white"
-    >{parser(expCvc)}</span
-  >
-</div>
+<section class={className} {...$$restProps}>
+  <article class="lg:relative lg:top-20 lg:left-32">
+    <img src={cardBack} alt="card back" class="max-h-44 shrink-0" />
+    <span
+      class="absolute top-1/2 right-9 -translate-y-[60%] text-sm tracking-widest text-white"
+      >{parser(expCvc)}</span
+    >
+  </article>
+</section>
