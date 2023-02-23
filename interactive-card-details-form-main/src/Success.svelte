@@ -13,7 +13,7 @@
     <h2 class="text-3xl uppercase tracking-widest">thank you!</h2>
     <p class="text-gray-dark">We've added your card details</p>
     <Button
-      class="bg-violet hover:bg-violet/90 focus:ring-violet !mt-7 w-full rounded-md py-3 text-center text-white focus:outline-none focus:ring-2 focus:ring-offset-2"
+      class="bg-violet hover:bg-violet/90 focus:ring-violet !mt-7 w-full rounded-md py-3 text-center text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2"
       on:click>Continue</Button
     >
   </div>

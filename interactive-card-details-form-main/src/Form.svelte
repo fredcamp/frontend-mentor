@@ -121,7 +121,7 @@
     </div>
     <Button
       type="submit"
-      class="bg-violet hover:bg-violet/90 focus:ring-violet !mt-7 w-full rounded-md py-3 text-center text-white focus:outline-none focus:ring-2 focus:ring-offset-2"
+      class="bg-violet hover:bg-violet/90 focus:ring-violet !mt-7 w-full rounded-md py-3 text-center text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2"
       >Confirm</Button
     >
   </form>
