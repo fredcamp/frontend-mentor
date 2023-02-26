@@ -112,7 +112,7 @@
     {#each testimonials as item (item.id)}
       {@const position = item.position}
       <li
-        class="visible absolute inset-0 z-20 grid  place-items-center opacity-0 transition-all duration-1000"
+        class="absolute inset-0 z-20 grid place-items-center opacity-0 transition-all duration-1000"
         class:translate-x-0={position === 'current'}
         class:translate-x-full={position === 'next'}
         class:-translate-x-full={position === 'prev'}
