@@ -5,7 +5,7 @@
   import Buttons from './Buttons.svelte'
 
   export let name: string
-  export let position: string
+  export let job: string
   export let image: string
   export let message: string
 </script>
@@ -50,7 +50,7 @@
       </p>
       <footer class="mt-6 lg:flex lg:gap-2">
         <p class="font-bold">{name}</p>
-        <p class="text-gray">{position}</p>
+        <p class="text-gray">{job}</p>
       </footer>
     </div>
   </div>
