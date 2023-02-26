@@ -1,5 +1,4 @@
 <script lang="ts">
-  import favicon from './assets/favicon-32x32.png'
   import patternBg from './assets/pattern-bg.svg'
   import patternQuote from './assets/pattern-quotes.svg'
   import patternCurve from './assets/pattern-curve.svg'
@@ -10,10 +9,6 @@
   export let image: string
   export let message: string
 </script>
-
-<svelte:head>
-  <link rel="shortcut icon" href={favicon} type="image/x-icon" />
-</svelte:head>
 
 <article
   class="border-gray/20 relative mx-auto max-w-xs border p-4 shadow-lg lg:grid lg:max-w-3xl lg:grid-flow-row-dense lg:grid-cols-2 lg:place-items-center lg:py-12 lg:pl-0"

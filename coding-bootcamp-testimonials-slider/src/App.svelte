@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fade } from 'svelte/transition'
+  import favicon from './assets/favicon-32x32.png'
   import { setContext } from 'svelte'
   import Testimonial from './Testimonial.svelte'
   import tanyaImg from './assets/image-tanya.jpg'
@@ -82,6 +82,10 @@
     }
   }
 </script>
+
+<svelte:head>
+  <link rel="shortcut icon" href={favicon} type="image/x-icon" />
+</svelte:head>
 
 <svelte:window on:keydown={onKeydown} on:wheel={onScroll} />
 
