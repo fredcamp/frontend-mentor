@@ -18,7 +18,7 @@
 
 <main class="flex min-h-screen flex-col items-center justify-center px-6">
   <section
-    class="bg-blue mx-auto min-h-[400px] max-w-sm overflow-hidden rounded-lg px-6 py-8 shadow-md"
+    class="bg-blue mx-auto min-h-[400px] max-w-sm overflow-hidden rounded-3xl px-6 py-8 shadow-md"
   >
     {#if show}
       <div class="flex flex-col items-center justify-center space-y-6 py-3">
