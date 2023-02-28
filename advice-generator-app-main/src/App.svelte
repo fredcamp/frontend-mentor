@@ -36,7 +36,7 @@
 
 <main class="grid min-h-screen place-items-center px-4">
   <section
-    class="bg-dark-gray-blue relative mx-auto max-w-sm rounded-lg px-6 pt-12 pb-16 shadow-2xl sm:max-w-lg"
+    class="bg-dark-gray-blue relative mx-auto max-w-sm rounded-2xl px-6 pt-12 pb-16 shadow-2xl sm:max-w-lg"
   >
     <article
       class="flex flex-col items-center justify-center space-y-6 text-center"
