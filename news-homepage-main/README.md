@@ -22,9 +22,9 @@ Users should be able to:
 
 ### Screenshot
 
-[Mobile](./design/mobile.jpg)
+![Mobile](./design/mobile.jpg)
 
-[Desktop](./design/desktop.jpg)
+![Desktop](./design/desktop.jpg)
 
 ## My process
 
