@@ -18,7 +18,7 @@
 </script>
 
 <section
-  class="mx-auto mt-14 max-w-screen-sm px-6 sm:max-w-screen-xl xl:mt-0 xl:max-w-sm"
+  class="mx-auto mt-14 max-w-screen-sm px-6 sm:max-w-screen-xl xl:mt-0 xl:max-w-md"
 >
   <div class="bg-blue-dark px-5 py-9">
     <h2 class="text-orange text-4xl font-bold">New</h2>
