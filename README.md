@@ -17,5 +17,5 @@ Compilation of output from [Frontend Mentor Challenges](https://www.frontendment
 - [Interactive Card Details](/interactive-card-details-form-main)
 - [Testimonials Slider](/coding-bootcamp-testimonials-slider)
 - [Advice Generator App](/advice-generator-app-main)
-
+- [News Homepage](/news-homepage-main)
 
