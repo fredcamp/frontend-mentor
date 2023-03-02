@@ -18,4 +18,6 @@ Compilation of output from [Frontend Mentor Challenges](https://www.frontendment
 - [Testimonials Slider](/coding-bootcamp-testimonials-slider)
 - [Advice Generator App](/advice-generator-app-main)
 - [News Homepage](/news-homepage-main)
+- [Expenses Chart](/expenses-chart-component-main)
+
 
