@@ -16,7 +16,7 @@
 
 <Nav />
 <main
-  class="lg:mx-auto lg:grid lg:max-w-screen-lg lg:grid-cols-2 lg:grid-rows-[1fr_auto] lg:gap-x-10 lg:px-4"
+  class="lg:mx-auto lg:grid lg:max-w-screen-lg lg:grid-cols-2 lg:grid-rows-[1fr_auto] lg:gap-x-32 lg:px-4"
 >
   <header class="lg:col-[2/-1] lg:row-[1/-1]">
     <picture>
