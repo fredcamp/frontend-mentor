@@ -13,7 +13,6 @@ module.exports = {
       gray: 'hsl(0, 0%, 41%)',
       black: 'hsl(0, 0%, 8%)',
       slate: '#ADADAD',
-      indigo: colors.indigo,
     },
     extend: {
       fontFamily: {
