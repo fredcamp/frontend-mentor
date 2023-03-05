@@ -41,8 +41,8 @@
             class="flex items-center justify-center gap-x-2 hover:text-black {link.toggle
               ? 'text-black'
               : 'text-gray'}"
-            aria-expanded={!link.toggle}
-            aria-controls="link-dropdown"
+            aria-expanded={link.toggle}
+            aria-controls={link.toggle ? 'link-dropdown' : null}
             on:click={() => (link.toggle = !link.toggle)}
           >
             {link.page}

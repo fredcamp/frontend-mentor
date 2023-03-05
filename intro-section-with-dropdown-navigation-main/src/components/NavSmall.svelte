@@ -33,7 +33,7 @@
     <Button
       class="text-black transition-transform hover:scale-110"
       aria-expanded={ariaExpanded}
-      aria-controls="small-menu"
+      aria-controls={ariaExpanded ? 'small-menu' : null}
       on:click={toggleMenu}
     >
       <MenuToggle />
