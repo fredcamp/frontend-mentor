@@ -20,3 +20,4 @@ Compilation of output from [Frontend Mentor Challenges](https://www.frontendment
 - [News Homepage](/news-homepage-main)
 - [Expenses Chart](/expenses-chart-component-main)
 - [Intro Section with Dropdown Nav](/intro-section-with-dropdown-navigation-main)
+- [Fylo Landing Page](/fylo-dark-theme-landing-page-master)
