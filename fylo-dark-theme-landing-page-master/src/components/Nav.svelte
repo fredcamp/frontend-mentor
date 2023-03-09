@@ -18,6 +18,7 @@
 
   $: if (innerWidth > 768) {
     showMenu = false
+    document.body.classList.remove('overflow-hidden')
   }
 
   function handleTheme(): void {
