@@ -16,6 +16,10 @@
   let isDarkMode = getTheme() === 'dark'
   let showMenu = false
 
+  $: if (innerWidth > 768) {
+    showMenu = false
+  }
+
   function handleTheme(): void {
     isDarkMode = !isDarkMode
     const theme = isDarkMode ? 'dark' : 'light'
