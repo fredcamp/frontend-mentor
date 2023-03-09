@@ -21,3 +21,6 @@ Compilation of output from [Frontend Mentor Challenges](https://www.frontendment
 - [Expenses Chart](/expenses-chart-component-main)
 - [Intro Section with Dropdown Nav](/intro-section-with-dropdown-navigation-main)
 - [Fylo Landing Page](/fylo-dark-theme-landing-page-master)
+
+## Intermediate
+- [Static Job Listings](/static-job-listings-master)
