@@ -20,6 +20,10 @@ module.exports = {
       fontFamily: {
         sans: ['League Spartan', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'header-desktop': 'url("/images/bg-header-desktop.svg")',
+        'header-mobile': 'url("/images/bg-header-mobile.svg")',
+      },
     },
   },
   plugins: [],
