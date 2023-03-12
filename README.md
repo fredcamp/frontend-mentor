@@ -24,3 +24,5 @@ Compilation of output from [Frontend Mentor Challenges](https://www.frontendment
 
 ## Intermediate
 - [Static Job Listings](/static-job-listings-master)
+- [E-commerce Product Page](/ecommerce-product-page-main)
+
