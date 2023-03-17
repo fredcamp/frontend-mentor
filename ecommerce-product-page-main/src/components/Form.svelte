@@ -4,10 +4,35 @@
   import IconCart from '../icons/icon-cart.svelte'
   import Button from './Button.svelte'
 
+  import type { Cart } from '../types/cart.type'
+  import product from '../constants/product'
+  import cartStore from '../stores/cart'
+
+  const price = product.price - product.price * product.discount
+
   let quantity = 0
+
+  function onSubmit(): void {
+    if (quantity < 1) return
+
+    const cartItem: Cart = {
+      id: crypto.randomUUID(),
+      image: '/images/image-product-1-thumbnail.jpg',
+      name: 'Fall Limited Edition Sneakers',
+      price: price,
+      amount: quantity,
+      total: price * quantity,
+    }
+
+    $cartStore = [...$cartStore, cartItem]
+    quantity = 0
+  }
 </script>
 
-<form class="space-y-6 lg:grid lg:grid-cols-[1fr_2fr] lg:gap-6">
+<form
+  class="space-y-6 lg:grid lg:grid-cols-[1fr_2fr] lg:gap-6"
+  on:submit|preventDefault={onSubmit}
+>
   <h3 class="sr-only">current number of items: {quantity}</h3>
   <div
     class="flex items-center justify-between rounded-xl bg-blue-gray/20 py-5 px-4 lg:py-3"
