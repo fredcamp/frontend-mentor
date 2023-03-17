@@ -1,7 +1,6 @@
 <script lang="ts">
-  import IconCart from '../icons/icon-cart.svelte'
-
   import Button from './Button.svelte'
+  import Cart from './Cart.svelte'
   import NavSmall from './NavSmall.svelte'
   import NavLarge from './NavLarge.svelte'
 
@@ -9,7 +8,7 @@
 </script>
 
 <nav
-  class="mx-auto flex w-full max-w-screen-xl flex-wrap items-center justify-between px-8 py-7 xl:px-0 {$isDesktop
+  class="relative mx-auto flex w-full max-w-screen-xl flex-wrap items-center justify-between px-8 py-7 xl:px-0 {$isDesktop
     ? 'border-b border-blue-gray'
     : null}"
 >
@@ -19,9 +18,7 @@
     <NavSmall />
   {/if}
   <div class="flex flex-wrap items-center gap-x-6">
-    <Button class="text-blue-gray-dark transition-colors hover:text-black">
-      <IconCart />
-    </Button>
+    <Cart />
     <Button
       class="w-7 rounded-full transition-shadow hover:ring-2 hover:ring-orange"
     >
