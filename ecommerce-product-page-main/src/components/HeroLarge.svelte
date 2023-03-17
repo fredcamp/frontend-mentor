@@ -1,19 +1,26 @@
 <script lang="ts">
+  import { tick } from 'svelte'
   import slideStore, { currentSlide } from '../stores/slides'
   import Button from './Button.svelte'
 
+  let loading = false
+
   function changeCurrent(current: number): void {
+    if (loading) return
     const currentIndex = $slideStore.findIndex(
       (item) => item.position === 'current'
     )
 
     if (currentIndex === current) return
+    loading = true
 
     $slideStore = $slideStore.map((item) => ({ ...item, position: 'next' }))
 
     const prev = current === 0 ? $slideStore.length - 1 : current - 1
     $slideStore[current].position = 'current'
     $slideStore[prev].position = 'previous'
+
+    tick().then(() => (loading = false))
   }
 </script>
 
