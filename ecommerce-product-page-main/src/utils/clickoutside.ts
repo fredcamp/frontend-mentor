@@ -1,6 +1,6 @@
 export default function clickOutside(node: HTMLElement) {
   function onClick(e) {
-    if (node.contains(e.target)) return
+    if (node.contains(e.target) || e.target.dataset.outclick) return
 
     node.dispatchEvent(new CustomEvent('outclick'))
   }
