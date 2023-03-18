@@ -7,6 +7,7 @@
   import type { Cart } from '../types/cart.type'
   import product from '../constants/product'
   import cartStore from '../stores/cart'
+  import backToTop from '../utils/backtotop'
 
   const price = product.price - product.price * product.discount
 
@@ -26,6 +27,7 @@
 
     $cartStore = [...$cartStore, cartItem]
     quantity = 0
+    backToTop()
   }
 </script>
 
