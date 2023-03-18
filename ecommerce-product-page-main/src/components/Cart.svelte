@@ -1,5 +1,7 @@
 <script lang="ts">
   import { fly, fade } from 'svelte/transition'
+  import { elasticOut } from 'svelte/easing'
+
   import IconCart from '../icons/icon-cart.svelte'
   import IconDelete from '../icons/icon-delete.svelte'
   import Button from './Button.svelte'
@@ -8,9 +10,7 @@
   import cartStore, { cartTotalItems } from '../stores/cart'
   import { amountParser } from '../utils/parser'
 
-  let showMenu = true
-
-  $: console.log($cartStore.length)
+  let showMenu = false
 
   function toggleMenu(): void {
     showMenu = !showMenu
@@ -33,7 +33,7 @@
   <div class="pointer-events-none">
     <IconCart />
     <span
-      class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 rounded-full bg-orange py-[1px] px-2 text-xs text-white"
+      class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2  rounded-full bg-orange py-[1px] px-2 text-xs text-white"
       >{$cartTotalItems}</span
     >
   </div>
@@ -53,13 +53,18 @@
       <div class="space-y-5 px-7 py-5 text-base">
         <ul class="space-y-3">
           {#each $cartStore as item (item.id)}
-            <li class="flex items-center justify-between gap-x-5" out:fade>
+            <li
+              class="flex items-center justify-between gap-x-5"
+              out:fade|local
+            >
               <img src={item.image} alt={item.name} class="h-12 rounded-md" />
               <div class="text-blue-gray-dark">
                 <p>{item.name}</p>
                 <p>
                   {amountParser(item.price)} x {item.amount}
-                  <strong class="text-black">{amountParser(item.total)}</strong>
+                  <strong class="ml-2 text-black"
+                    >{amountParser(item.total)}</strong
+                  >
                 </p>
               </div>
               <Button
@@ -69,13 +74,17 @@
             </li>
           {/each}
         </ul>
-        <Button
-          class="w-full rounded-lg bg-orange py-4 text-base font-bold text-white transition-colors hover:bg-orange/70"
-          >Checkout</Button
+        <a
+          href="/"
+          class="block w-full rounded-lg bg-orange py-4 text-center text-base font-bold text-white transition-colors hover:bg-orange/70"
+          >Checkout</a
         >
       </div>
     {:else}
-      <div class="flex min-h-[200px] items-center justify-center">
+      <div
+        class="flex min-h-[200px] items-center justify-center"
+        in:fly|local={{ x: 50, easing: elasticOut }}
+      >
         <p
           class="font-bold text-blue-gray-dark
         "
