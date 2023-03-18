@@ -2,8 +2,14 @@
   import { tick } from 'svelte'
   import slideStore, { currentSlide } from '../stores/slides'
   import Button from './Button.svelte'
+  import Lightbox from './Lightbox.svelte'
 
   let loading = false
+  let showLightbox = false
+
+  function toggleLightbox(): void {
+    showLightbox = !showLightbox
+  }
 
   function changeCurrent(current: number): void {
     if (loading) return
@@ -26,12 +32,17 @@
 
 <header>
   <div class="flex flex-col items-center gap-6">
-    <img
-      src={$currentSlide.image}
-      alt="white and brown low-cut profile sneakers"
-      class="max-h-[500px] w-full rounded-lg object-cover object-center"
-      draggable="false"
-    />
+    <Button
+      class="max-h-[500px] w-full cursor-pointer overflow-hidden rounded-lg"
+      on:click={toggleLightbox}
+    >
+      <img
+        src={$currentSlide.image}
+        alt="white and brown low-cut profile sneakers"
+        class="object-cover object-center"
+        draggable="false"
+      />
+    </Button>
     <ul class="flex items-center justify-between gap-x-6">
       {#each $slideStore as item, i}
         <li>
@@ -56,3 +67,7 @@
     </ul>
   </div>
 </header>
+
+{#if showLightbox}
+  <Lightbox bind:show={showLightbox} slides={$slideStore} />
+{/if}
