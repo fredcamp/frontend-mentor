@@ -30,13 +30,14 @@
   aria-controls={showMenu ? 'cart-items' : null}
   on:click={toggleMenu}
 >
-  <div class="pointer-events-none">
+  <span class="sr-only">cart total items</span>
+  <span class="pointer-events-none">
     <IconCart />
     <span
-      class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2  rounded-full bg-orange py-[1px] px-2 text-xs text-white"
+      class="bg-orange absolute top-0 right-0 translate-x-1/2  -translate-y-1/2 rounded-full py-[1px] px-2 text-xs text-white"
       >{$cartTotalItems}</span
     >
-  </div>
+  </span>
 </Button>
 
 {#if showMenu}
@@ -48,7 +49,7 @@
     use:clickOutside
     on:outclick={toggleMenu}
   >
-    <h2 class="border-b border-blue-gray py-4 px-7 font-bold">Cart</h2>
+    <h2 class="border-blue-gray border-b py-4 px-7 font-bold">Cart</h2>
     {#if $cartStore.length > 0}
       <div class="space-y-5 px-7 py-5 text-base">
         <ul class="space-y-3">
@@ -68,7 +69,7 @@
                 </p>
               </div>
               <Button
-                class="text-blue-gray transition-colors hover:text-orange"
+                class="text-blue-gray hover:text-orange transition-colors"
                 on:click={() => removeCartItem(item.id)}><IconDelete /></Button
               >
             </li>
@@ -76,7 +77,7 @@
         </ul>
         <a
           href="/"
-          class="block w-full rounded-lg bg-orange py-4 text-center text-base font-bold text-white transition-colors hover:bg-orange/70"
+          class="bg-orange hover:bg-orange/70 block w-full rounded-lg py-4 text-center text-base font-bold text-white transition-colors"
           >Checkout</a
         >
       </div>
@@ -86,7 +87,7 @@
         in:fly|local={{ x: 50, easing: elasticOut }}
       >
         <p
-          class="font-bold text-blue-gray-dark
+          class="text-blue-gray-dark font-bold
         "
         >
           Your cart is empty.
