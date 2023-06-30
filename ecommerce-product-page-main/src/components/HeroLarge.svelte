@@ -48,7 +48,7 @@
         <li>
           <Button
             class="group overflow-hidden rounded-lg {item.position === 'current'
-              ? 'ring ring-orange'
+              ? 'ring-orange ring'
               : null}"
             on:click={() => changeCurrent(i)}
           >

@@ -28,7 +28,7 @@
 </script>
 
 <header
-  class="min-h-[30vh] bg-cyan-primary bg-header-mobile bg-cover bg-center bg-no-repeat"
+  class="bg-cyan-primary bg-header-mobile min-h-[30vh] bg-cover bg-center bg-no-repeat"
 >
   <h1 class="sr-only">static job listing</h1>
 </header>

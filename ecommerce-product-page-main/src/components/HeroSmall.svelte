@@ -60,7 +60,7 @@
       {/each}
     </ul>
     <Button
-      class="absolute left-4 top-1/2 h-12 w-12 -translate-y-1/2 rounded-full bg-white transition-colors hover:text-orange
+      class="hover:text-orange absolute left-4 top-1/2 h-12 w-12 -translate-y-1/2 rounded-full bg-white transition-colors
     "
       on:click={() => onClick('prev')}
     >
@@ -70,7 +70,7 @@
       </div>
     </Button>
     <Button
-      class="absolute right-4 top-1/2 h-12 w-12 -translate-y-1/2 rounded-full bg-white transition-colors hover:text-orange
+      class="hover:text-orange absolute right-4 top-1/2 h-12 w-12 -translate-y-1/2 rounded-full bg-white transition-colors
     "
       on:click={() => onClick('next')}
     >

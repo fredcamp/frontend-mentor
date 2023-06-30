@@ -9,7 +9,7 @@
 
 <nav
   class="relative mx-auto flex w-full max-w-screen-xl flex-wrap items-center justify-between px-8 py-7 xl:px-0 {$isDesktop
-    ? 'border-b border-blue-gray'
+    ? 'border-blue-gray border-b'
     : null}"
 >
   {#if $isDesktop}
@@ -20,7 +20,7 @@
   <div class="flex flex-wrap items-center gap-x-6">
     <Cart />
     <Button
-      class="w-7 rounded-full transition-shadow hover:ring-2 hover:ring-orange"
+      class="hover:ring-orange w-7 rounded-full transition-shadow hover:ring-2"
     >
       <img src="/images/image-avatar.png" alt="man wearing sunglasses" />
     </Button>

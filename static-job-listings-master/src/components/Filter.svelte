@@ -16,7 +16,7 @@
 
 {#if $filterStore.length > 0}
   <section
-    class="relative flex -translate-y-1/2 items-center justify-between rounded-md bg-cyan-gray-light-tab py-6 px-8 shadow-xl shadow-cyan-primary/20"
+    class="bg-cyan-gray-light-tab shadow-cyan-primary/20 relative flex -translate-y-1/2 items-center justify-between rounded-md py-6 px-8 shadow-xl"
     in:slide
     out:fade
   >
@@ -24,11 +24,11 @@
       {#each $filterStore as item (item)}
         <li in:scale out:fade animate:flip={{ duration: 300, delay: 300 }}>
           <Button
-            class="group flex items-stretch justify-center overflow-hidden rounded-md bg-cyan-primary/20 text-base font-bold text-cyan-primary"
+            class="bg-cyan-primary/20 text-cyan-primary group flex items-stretch justify-center overflow-hidden rounded-md text-base font-bold"
             on:click={() => onClick(item)}
             ><span class="px-2 py-1">{item}</span>
             <span
-              class="flex items-center justify-center bg-cyan-primary px-2 text-lg text-cyan-gray-light-tab transition-colors group-hover:bg-cyan-darker-gray"
+              class="bg-cyan-primary text-cyan-gray-light-tab group-hover:bg-cyan-darker-gray flex items-center justify-center px-2 text-lg transition-colors"
             >
               <IconRemove />
             </span></Button

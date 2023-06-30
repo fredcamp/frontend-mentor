@@ -24,18 +24,22 @@
   <Hero />
   <section class="mx-auto space-y-9 px-8 py-7 lg:max-w-screen-sm">
     <div class="space-y-4">
-      <h2 class="font-bold uppercase tracking-wider text-orange">
+      <h2 class="text-orange font-bold uppercase tracking-wider">
         sneaker company
       </h2>
-      <h3 class="text-4xl font-bold">Fall Limited Edition Sneakers</h3>
+      <h3 class="text-4xl font-bold lg:text-5xl">
+        Fall Limited Edition Sneakers
+      </h3>
     </div>
     <p class="text-blue-gray-dark">
       These low-profile sneakers are your perfect casual wear companion.
       Featuring a durable rubber outer sole, they’ll withstand everything the
       weather can offer.
     </p>
-    <article class="flex flex-wrap items-center justify-between font-bold">
-      <div class="flex flex-wrap items-center gap-x-8">
+    <article
+      class="flex flex-wrap items-center justify-between font-bold lg:flex-col lg:items-start lg:gap-y-3"
+    >
+      <div class="flex flex-wrap items-center gap-x-8 lg:gap-x-5">
         <div>
           <h2 class="sr-only">current price</h2>
           <p class="text-4xl">
@@ -44,14 +48,14 @@
         </div>
         <div>
           <h3 class="sr-only">{product.discount * 100}% discount</h3>
-          <p class="rounded-lg bg-orange/20 py-1 px-3 text-xl text-orange">
+          <p class="bg-orange/20 text-orange rounded-lg py-1 px-3 text-xl">
             {product.discount * 100}%
           </p>
         </div>
       </div>
       <div>
         <h3 class="sr-only">discounted price</h3>
-        <p class="text-xl text-blue-gray line-through">
+        <p class="text-blue-gray text-xl line-through">
           {amountParser(product.price)}
         </p>
       </div>

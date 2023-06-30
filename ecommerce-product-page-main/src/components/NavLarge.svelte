@@ -5,9 +5,9 @@
 </script>
 
 <div class="flex items-center gap-x-16">
-  <a href="/" class="transition-colors hover:text-orange">
+  <a href="/" class="hover:text-orange transition-colors">
     <h1 class="sr-only">sneakers</h1>
     <Logo />
   </a>
-  <NavLinks class="flex items-center gap-x-9 text-base text-blue-gray-dark" />
+  <NavLinks class="text-blue-gray-dark flex items-center gap-x-9 text-base" />
 </div>
