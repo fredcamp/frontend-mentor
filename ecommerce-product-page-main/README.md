@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-To display the specific hero component in different viewports (small and large screen devices), we can create both separate components and render them depending on what viewport it falls. Since the **Navigation** and **Hero** Components both have different display. I created a viewport store wherein it tracks on what viewport size it belongs to.
+To display the specific hero component on different viewports (small and large screen devices), we can create both separate components and render them depending on what viewport it falls. Since the **Navigation** and **Hero** Components both have different display. I created a viewport store wherein it tracks on what viewport size it belongs to.
 
 _Viewport Store_
 
