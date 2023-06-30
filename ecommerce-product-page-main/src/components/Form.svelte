@@ -37,25 +37,27 @@
 >
   <h3 class="sr-only">current number of items: {quantity}</h3>
   <div
-    class="flex items-center justify-between rounded-xl bg-blue-gray/20 py-5 px-4 lg:py-3"
+    class="bg-blue-gray/20 flex items-center justify-between rounded-xl py-5 px-4 lg:py-3"
   >
     <Button
-      class="p-3 text-orange transition-colors hover:text-orange/70"
+      class="text-orange hover:text-orange/70 p-3 transition-colors"
       on:click={() => (quantity = Math.max(0, quantity - 1))}
     >
+      <span class="sr-only">decrease</span>
       <IconMinus />
     </Button>
     <p class="text-xl font-bold">{quantity}</p>
     <Button
-      class="p-3 text-orange transition-colors hover:text-orange/70"
+      class="text-orange hover:text-orange/70 p-3 transition-colors"
       on:click={() => quantity++}
     >
+      <span class="sr-only">increase</span>
       <IconPlus />
     </Button>
   </div>
   <Button
     type="submit"
-    class="w-full rounded-xl bg-orange py-5 text-white shadow-md shadow-orange/50 transition-colors hover:bg-orange/70 lg:py-3"
+    class="bg-orange shadow-orange/50 hover:bg-orange/70 w-full rounded-xl py-5 text-white shadow-md transition-colors lg:py-3"
   >
     <span class="flex items-center justify-center gap-x-4 font-bold"
       ><IconCart /> Add to cart</span

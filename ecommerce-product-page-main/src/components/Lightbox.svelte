@@ -63,7 +63,7 @@
       on:outclick={() => (show = false)}
     >
       <Button
-        class="ml-auto block py-3 text-white transition-colors hover:text-orange"
+        class="hover:text-orange ml-auto block py-3 text-white transition-colors"
         on:click={() => (show = false)}><IconClose /></Button
       >
       <div class="relative">
@@ -74,22 +74,22 @@
           draggable="false"
         />
         <Button
-          class="absolute top-1/2 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-white transition-colors hover:text-orange"
+          class="hover:text-orange absolute top-1/2 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-white transition-colors"
           on:click={() => handleClick('prev')}
         >
-          <div class="flex items-center justify-center">
-            <span class="sr-only">previous</span>
+          <span class="sr-only">previous</span>
+          <span class="flex items-center justify-center">
             <IconPrevious />
-          </div>
+          </span>
         </Button>
         <Button
-          class="absolute top-1/2 right-0 h-12 w-12 -translate-y-1/2 translate-x-1/2 rounded-full bg-white transition-colors hover:text-orange"
+          class="hover:text-orange absolute top-1/2 right-0 h-12 w-12 -translate-y-1/2 translate-x-1/2 rounded-full bg-white transition-colors"
           on:click={() => handleClick('next')}
         >
-          <div class="flex items-center justify-center">
-            <span class="sr-only">next</span>
+          <span class="sr-only">next</span>
+          <span class="flex items-center justify-center">
             <IconNext />
-          </div>
+          </span>
         </Button>
       </div>
       <div>
@@ -98,8 +98,8 @@
             <li>
               <Button
                 class="overflow-hidden rounded-lg {item === currentSlide
-                  ? 'ring-2 ring-orange'
-                  : 'hover:ring-2 hover:ring-orange'} group relative transition-colors"
+                  ? 'ring-orange ring-2'
+                  : 'hover:ring-orange hover:ring-2'} group relative transition-colors"
                 on:click={() => changeCurrent(i)}
               >
                 <img
