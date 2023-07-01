@@ -12,6 +12,7 @@ Compilation of output from [Frontend Mentor Challenges](https://www.frontendment
 - [FAQ Accordion Card](/faq-accordion-card-main)
 - [Products Preview Card](/product-preview-card-component-main)
 - [Interactive Rating](/interactive-rating-component-main)
+- [Result Summary](/result-summary-component)
 
 ## Junior
 - [Interactive Card Details](/interactive-card-details-form-main)
