@@ -13,6 +13,7 @@ Compilation of output from [Frontend Mentor Challenges](https://www.frontendment
 - [Products Preview Card](/product-preview-card-component-main)
 - [Interactive Rating](/interactive-rating-component-main)
 - [Result Summary](/result-summary-component)
+- [Intro Sign-up Form](/intro-signup-form)
 
 ## Junior
 - [Interactive Card Details](/interactive-card-details-form-main)
