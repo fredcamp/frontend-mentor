@@ -43,4 +43,4 @@ Users should be able to:
 
 ## Author
 
-- Fred Campo (https://github.com/fredcamp)
+- [Fred Campo](https://github.com/fredcamp)
