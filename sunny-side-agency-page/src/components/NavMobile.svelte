@@ -18,7 +18,7 @@
 <nav
   class="absolute left-0 right-0 top-0 px-8 py-9"
   aria-label="main navigation"
-  in:fly={{ y: -100, duration: 1000 }}
+  in:fly={{ y: -100, duration: 1000, delay: 1000 }}
 >
   <div class="flex items-center justify-between">
     <div>
