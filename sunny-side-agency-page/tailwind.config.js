@@ -30,8 +30,8 @@ export default {
         serif: ['Fraunces', ...defaultTheme.fontFamily.serif],
       },
       backgroundImage: {
-        'header-mobile': 'url("images/mobile/image-header.jpg")',
-        'header-desktop': 'url("images/desktop/image-header.jpg")',
+        'header-mobile': 'url("/images/mobile/image-header.jpg")',
+        'header-desktop': 'url("/images/desktop/image-header.jpg")',
       },
     },
   },
